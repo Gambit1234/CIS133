@@ -2,8 +2,8 @@ body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
-    display: grid;
     grid-template-columns: 15% auto;
+    display: grid;
     grid-template-rows: 75px 1fr 50px;
     grid-template-areas:
                         "hdr hdr"
@@ -58,9 +58,11 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
-header div{
+
+footer div{
     margin: 0 20px;
 }
-footer div{
+
+header div{
     margin: 0 20px;
 }

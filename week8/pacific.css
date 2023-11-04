@@ -46,8 +46,8 @@ nav li {
 
 nav ul { 
     display: flex;
-    flex-direction: center;
     list-style-type: none; 
+    flex-direction: center;
     margin: 0;
     padding: 0; 
 }
