@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> order_Form</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+        }
+
+        img {
+            height: 180px;
+            width: 180px;
+        }
+
+        form {
+            width: 450px;
+        }
+
+
+        td {
+            padding-right: 10px;
+        }
+
+        /*
+
+        #first_name {
+            width: 28vw;
+        }
+
+        #last_name {
+            width: 28vw;
+        }
+
+        #street {
+            width: 500px;
+        }
+
+        #city {
+            width: 200px;
+
+        }
+
+        #state {
+            width: 120px;
+        }
+
+        #zip {
+            width: 100px;
+        }
+
+        #email {
+            width: 300px;
+        }
+
+        #phone {
+            width: 510px;
+        }
+
+        #date {
+            width: 150px;
+            position: relative;
+            left: 200px;
+        }
+
+        #special_instuction {
+            width: 500px;
+        }
+
+        #submit {
+            width: 100px;
+            position: relative;
+            left: 410px;
+        }
+        */
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td rowspan="5"><img src="./images/images coffee.webp" alt="logo"></td>
+                <td style="font-size: large; font-weight: bold; font-style: italic;">Company Logo Shirt</td>
+            </tr>
+
+            <tr>
+                <td>Color: <select name="1" name="color" id="color">
+                        <option> Select Color</option>
+                        <option> white</option>
+                        <option> black</option>
+                        <option> grey</option>
+                        <option> red</option>
+                    </select>
+                    Quantity: <input type="text" size="1" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Size: <input type="radio" name="size" id="size" value="small">Small
+                    <input type="radio" name="size" id="size" value="medium">Medium
+                    <input type="radio" name="size" id="size" value="large">Large
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" name="include logo" id="inculude logo">Include Logo</td>
+            </tr>
+
+            <tr>
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+
+        </table>
+        <hr>
+
+        <table>
+            <tr>
+                <td><input style="width:100%" type="text" name="first name" id="first_name" placeholder="First Name"
+                        tabindex="1"></td>
+                <td colspan="2"><input style="width:100%" type="text" name="last name" id="last_name"
+                        placeholder="Last Name" tabindex="2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input style="width: 100%;" type="text" name="street address" id="street address"
+                        placeholder="Street Address" tabindex="3"></td>
+            </tr>
+
+            <tr>
+                <td style="width:50%"><input style="width:100%" type="text" name="city" id="city" placeholder="City"
+                        tabindex="4"></td>
+                <td style="width:25%"><input style="width:100%;" type="text" name="state" id="state" placeholder="State"
+                        tabindex="5"></td>
+                <td style="width:25%"><input style="width:100%" type="text" name="Zip" id="Zip" placeholder="Zip"
+                        tabindex="6"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input style="width: 100%;" type="email" name="email" id="email"
+                        placeholder="Email Address" tabindex="7">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input style="width: 100%;" type="phone" name="phone" id="phone"
+                        placeholder="Phone Number" tabindex="8">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Best Delivery Date:</label>
+                </td>
+                <td colspan="2"><input style="width: 100%;" type="date" name="date" id="date" tabindex="9"></td>
+
+            </tr>
+
+            <tr>
+                <td colspan="3"><textarea style="width:100%" name="special instruction" id="special instruction"
+                        placeholder="Special Instructions"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td><input style="width: 100%;" type="submit" name="submit" id="submit"></td>
+            </tr>
+
+
+        </table>
+
+
+
+    </form>
+
+</body>
+
+</html>
