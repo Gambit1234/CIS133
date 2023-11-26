@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change The Title</title>
+    <title id="Title">Change The Title</title>
     <style>
         body {
             background-color: lightgreen;
@@ -34,14 +34,43 @@
         }
     </style>
 </head>
+
+
 <body>
+
+
+
+
     <div id="celebrity">Mark Rober</div>
     <table>
         <tr>
-            <td><button>Change Title</button></td>
-            <td><button>Change Name</button></td>
-            <td><button>Change Color</button></td>
+            <td><button onclick="changeTitle()">Change Title</button></td>
+            <td><button onclick="changeName()">Change Name</button></td>
+            <td><button onclick="changeColor()">Change Color</button></td>
         </tr>
     </table>
+
+<script>
+
+function changeTitle() {
+var strTitle = window.prompt("What do you want the title of this page to be?");
+document.getElementById("Title").innerHTML = strTitle;
+}
+
+function changeName() {
+var strName = window.prompt ("Who is your favorite celebrity?");
+document.getElementById("celebrity").innerHTML = strName;
+}
+
+function changeColor() {
+var strColor = window.prompt ("What color do you want the background to be?");
+document.body.style.backgroundColor = strColor;
+}
+
+</script>
+
+
+
+
 </body>
 </html>
