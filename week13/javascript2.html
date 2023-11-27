@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,9 +41,9 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
-                    <input type="button" value="Cancel" onclick="cancelTicket()" />
-                    <input type="button" value="Print Ticket" onclick="printTicket()" />
+                <td colspan="2" style="text-align:right;">
+                <input type="button" value="Cancel" onclick="cancelTicket()" />
+                <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
             </tr>
         </table>
@@ -74,6 +75,28 @@
 
     function cancelTicket() {
         window.close();
+    }
+
+    function printTicket() {
+        var amigoName = document.getElementById('amigo_name').value;
+        var amigoType = document.getElementById('amigo_type').value;
+        var amigoSize;
+
+        for (let size of document.getElementsByTagName('input')) {
+            if(size.type == 'radio'){
+                if (size.checked == true)
+                    amigoSize = size.value;
+            }
+        }
+
+        document.getElementById('amigoName').innerText = amigoName;
+        document.getElementById('amigoPicture').src = `./images/${amigoType}-${amigoSize}.jpg`;
+        document.getElementById('amigoPicture').style.height = "150px";
+        document.getElementById('form').style.display = "none";
+
+        setTimeout(()=>{
+            alert('The ticket is ready to print');
+        },100);
     }
 
 </script>
